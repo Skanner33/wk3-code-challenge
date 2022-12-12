@@ -1,41 +1,47 @@
 
-document.addEventListener('DOMContentLoaded', () => {
+
+
+function moviesDo() {
 
     const movies = document.getElementById('films')
     
     const filmSetup = document.getElementById('filmSetup')
     
-    const loadFilm = () => {
-        fetch('http://localhost:3000/films')
-        .then((response) => response.json())
-        .then((data) => createFilmDetails(data, filmSetup))
-    } 
-    loadFilm();
+    fetch('http://localhost:3000/films')
+    .then((response) => response.json())
+    .then((data) => createFilmDetails(data, filmSetup))
+    
 
     fetch('http://localhost:3000/films')
     .then(resp => resp.json())
     .then(data => {
 
-        data.forEach(films => {
+        (data).forEach(films => {
             
             const movieList = document.createElement('li')
 
-            movieList.addEventListener('click', () => {
-                filmSetup.innerHTML = ''
-                fetch(`http://localhost:3000/films/${films.id}`)
-                .then(resp => resp.json())
-                .then(data => {
-                    createFilmDetails(data, filmSetup)
-                })
-            })
+            // movieList.addEventListener('click', () => {
+            //     filmSetup.innerHTML = ''
+            //     fetch(`http://localhost:3000/films/${films.id}`)
+            //     .then(resp => resp.json())
+            //     .then(data => {
+            //         createFilmDetails(data, filmSetup)
+            //     })
+            // })
 
             const pTitle = document.createElement('p')
             pTitle.innerText = films.title
             movieList.appendChild(pTitle)
             movies.appendChild(movieList)
+
+            movieList.addEventListener('click', () =>{
+                filmSetup.innerHTML = ''
+                createFilmDetails(films, filmSetup)
+            })
         });
     })
-})
+}
+document.addEventListener('DOMContentLoaded', moviesDo)
 
 function createFilmDetails(data, andAdd){
     const title = document.createElement('h2')

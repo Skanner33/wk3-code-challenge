@@ -1,60 +1,56 @@
-.navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 1rem;
-  }
-  
-  .bg-dark {
-    background-color: #343a40;
-  }
-  
-  .navbar-brand {
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-  }
-  
-  .text-light {
-    color: #f8f9fa;
-  }
-  
-  .container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-  }
-  
-  .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-  }
-  
-  .me-auto {
-    margin-left: auto;
-  }
-  
-  .d-flex {
-    display: flex;
-  }
-  
-  .flex-row {
-    flex-direction: row;
-  }
-  
+body {
+  margin: 0;
+  background-color: #f8f8f8;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  height: 65px;
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+
+ul {
+  background-color: #e5e5e5;
+  float: left;
+  list-style: circle;
+  width: 16%;
+  text-align: center;
+  margin-right: 10px;
+  color: black;
+}
+
+li {
+  border-bottom: thin solid #ccc;
+  padding: 15px;
+}
+
+#movieContainer {
+  text-align: center;
+}
+
+img {
+  width: 40%;
+  height: 500px;
+  float: left;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+button {
+  margin: 20px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #3f9e45;
+}
