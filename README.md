@@ -46,6 +46,17 @@
 
 -Click on the challenge and voila you can vote for the cutest animal.
 
+# What Does What?
+-Once you navigate into the site on the left side of your screen you'll be able to see the various movies that are to be viewed.
+
+-Choose what movie you'd like to see and click on it.
+
+-You'll be directed to a page that looks like this;
+
+<img src="example.png" width="600" height="300">
+
+-Once there scroll to the bottom of the page and buy your ticket (psst! They are quite limited) and voila enjoy your movie.
+
 # Authors
 This project was contributed to by:
 
