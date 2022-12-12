@@ -1,6 +1,4 @@
 
-
-
 function moviesDo() {
 
     const movies = document.getElementById('films')
@@ -49,7 +47,7 @@ function createFilmDetails(data, andAdd){
     andAdd.appendChild(title)
 
     const runtime = document.createElement('p')
-    runtime.innerHTML = `<b>Show Time:</b> ${data.runtime}`
+    runtime.innerHTML = `<b>Run Time:</b> ${data.runtime}`
     andAdd.appendChild(runtime)
 
     const poster = document.createElement('img')

@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   background-color: #f8f8f8;
   font-family: 'Montserrat', sans-serif;
@@ -28,7 +28,7 @@ li {
   padding: 15px;
 }
 
-#movieContainer {
+#filmSetup {
   text-align: center;
 }
 
@@ -53,4 +53,71 @@ button {
 
 button:hover {
   background-color: #3f9e45;
+} */
+
+
+body {
+  font-family: sans-serif;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  /* Add this line to move the ul element to the left side of the page */
+  flex-direction: row-reverse;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#films {
+  list-style: none;
+}
+
+#films li {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: lightgray;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+#films li:hover {
+  background-color: darkgray;
+}
+
+img {
+  max-width: 400px;
+  margin: 20px 0;
+}
+
+#button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: lightgray;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: darkgray;
+}
+
+/* Add this code to style the card */
+.card {
+  max-width: 400px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  margin: 20px 0;
+  background-color: #ddd;
 }
