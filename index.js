@@ -5,16 +5,16 @@ function moviesDo() {
     
     const filmSetup = document.getElementById('filmSetup')
     
-    fetch('http://localhost:3000/films')
+    fetch('https://skanner33.github.io/Skanner33-github.io/db.json')
     .then((response) => response.json())
-    .then((data) => createFilmDetails(data, filmSetup))
+    .then((data) => createFilmDetails(data.films, filmSetup))
     
 
-    fetch('http://localhost:3000/films')
+    fetch('https://skanner33.github.io/Skanner33-github.io/db.json')
     .then(resp => resp.json())
     .then(data => {
 
-        (data).forEach(films => {
+        ((data.films)).forEach(films => {
             
             const movieList = document.createElement('li')
 
