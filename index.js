@@ -56,6 +56,7 @@ function createFilmDetails(data, andAdd) {
   ticketsAvailable.innerText = remainingTickets;
   andAdd.appendChild(ticketsAvailable);
 
+  //buy ticket solution
   const buyTicketBtn = document.createElement("button");
   buyTicketBtn.innerText = "Buy Ticket";
   buyTicketBtn.addEventListener("click", () => {
@@ -67,6 +68,8 @@ function createFilmDetails(data, andAdd) {
       buyTicketBtn.disabled = true;
       buyTicketBtn.innerText = "SOLD OUT";
     }
+
+    
   });
   andAdd.appendChild(buyTicketBtn);
 }
